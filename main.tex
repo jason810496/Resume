@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% template Author : Sidratul Muntaha Ahmed
+% template License : MIT
+
+% Myself : Liu Zhe You
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Liu Zhe You} \\ \vspace{1pt}
+    \small \href{mailto:f74116720@gs.ncku.edu.tw}{\underline{Mail}} $|$ 
+    \href{github.com/jason810496}{\underline{Github}} $|$
+    \href{https://www.linkedin.com/in/zhe-you-liu-85aa13244/}{\underline{LinkedIn}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Cheng Kung University}{Tainan , TW}
+      {Bachelor of Computer Science and Information Engineering}{Expected September 2026}
+          \resumeItemListStart
+            \resumeItem{\textbf{National Collegiate Programming Contest} :} Merit Award
+            \resumeItem{\textbf{Programming Coursework} :} Algorithms \& Data Structures , Computer Arch , System Adminstration
+          \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Part-time SWE/QA}{April 2022 – Present}
+    {GLSoft company}{Remote}
+    \resumeItemListStart
+        \resumeItem{Build automated selenium grid , appium testing POC for mobile devices.}
+        \resumeItem{Colaberate with over ten colleague on ASP.NET backend projects.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Part-time SWE/DevOps}{October 2022 – April 2023}
+      {SimpleWay Insurance Service}{Remote}
+      \resumeItemListStart
+        \resumeItem{Increase visibility by 20\% by adding article searching, multi-file uploading, and a backstage WYSIWYG editor to the previous system structure.}
+        \resumeItem{Using Git to collaborate with another developer on different branches.}
+        \resumeItem{Leveraged knowledge to add new features to the existing framework and collaborate effectively with other
+        developers.}
+      \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Community \& Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Director/DSA Lecturer}{July 2020 – July 2021}
+      {Wuling Computer Science Club}{Wuling Senior High School}
+      \resumeItemListStart
+        \resumeItem{Teaching C++ syntax, data structures, and algorithms to a club of 50 members.}
+        \resumeItem{Increasing course engagement by 30\% by leading committee members to organize diverse lectures .}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Lecturer}{November 2021 – Present}
+      {NCKU Google Developer Student Clubs Flutter Group}{NCKU GDSC}
+      \resumeItemListStart
+        \resumeItem{Teaching Dart syntax and the Flutter framework structure in GDSC .}
+        \resumeItem{Leading members to compelete collaboration side projects .}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Live Share Location} $|$ \emph{Python3, FastAPI, webSockets, Vue, Docker, Git}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{A POC for live share location between different users with chat, check in, posting features.}
+            \resumeItem{Colaberate with only one colleague and finish the porject less than 15 hours .}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HSPC Registration System} $|$ \emph{Python3, Flask, SQLite, p5.js, Docker, Git}}{February 2023}
+          \resumeItemListStart
+            \resumeItem{A full-stack web app was built for users to register for the NCKU High School Programming Contest, with a backstage for administrators to confirm teams, make announcements, and respond to questions.}
+            \resumeItem{Built app in MVC structure using flask and SQLAlchemy ORM to increase its maintainability and extendability.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Access Control System} $|$ \emph{NodeMCU, C++, Google App Script}}{May 2022}
+          \resumeItemListStart
+            \resumeItem{An IoT system prototype that can update gate access records to the cloud and change passwords from the backstage.}
+            \resumeItem{Learn network administration by setting up reserved IP addresses, configuring port forwarding, configuring LAN DHCP settings, and configuring WAN DNS settings.}
+          \resumeItemListEnd
+         
+
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python3, PHP, Java, JS, HTML, CSS} \\
+     \textbf{Frameworks}{: Flask, FastAPI, React, Vue} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, SQLite } \\
+     \textbf{Developer Tools}{: Git,Docker, Github Actions, Linux, Vim}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
