@@ -124,6 +124,7 @@
       {National Cheng Kung University}{Tainan , TW}
       {Bachelor of Computer Science and Information Engineering}{Expected September 2026}
           \resumeItemListStart
+          \resumeItem{\textbf{TSMC Hackathon - IT Infra Automation Monitoring using GenAI 2024} :} Second Place
             \resumeItem{\textbf{ICPC Asia Taiwan Regional Programming Contest 2023} :} Bronze Medal
             \resumeItem{\textbf{National Collegiate Programming Contest 2023 \& 2022} :} Merit Award
             \resumeItem{\textbf{Programming Coursework} :} Algorithms \& Data Structures , Computer Arch , System Adminstration
@@ -136,12 +137,19 @@
   \resumeSubHeadingListStart
 
   \resumeSubheading
+    {Part-time SWE}{December 2023 – Present}
+    {PAIA company{ $|$ \emph{Django, PostgreSQL, Redis, Docker, Pytest, Performance Profiling}}}{Hybrid Working}
+    \resumeItemListStart
+        \resumeItem{Fix the Redis anti-pattern for calculating `today\_login\_count` and speed it up over 300 times.}
+        \resumeItem{Developing new features and refactoring with Test-Driven Development.}
+    \resumeItemListEnd
+  \resumeSubheading
     {Part-time SWE}{April 2023 – Present}
-    {GLSoft company}{Remote}
+    {GLSoft company{ $|$ \emph{FastAPI, Docker, MySQL, POC, Solution reserach, Vue3, Git Flow}}}{Remote}
     \resumeItemListStart
         \resumeItem{Setup RBAC system for over 100 roles in production system .}
-        \resumeItem{Build automated mobile devices testing POC using RobotFramework, Selenium grid, Appium.}
-        \resumeItem{Colaberate with over 10 colleague on ASP.NET backend projects for customer loyalty services.}
+        \resumeItem{Design over 30 API for a tableware rental service, implement them in FastAPI, SQLAlchemy and follow Git Flow.}
+        \resumeItem{Research solutions and build POC across 4 projects, including a Proxy-Site, WYSIWYG Editor, open-source CRUD Dashboard, and Next.js UI framework.}
     \resumeItemListEnd
      
     \resumeSubHeadingListEnd
@@ -151,20 +159,12 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Lecturer}{November 2023}
+      {Conference Guest Speaker}{November 2023}
       {MOPCON(Mobile Open Platform Conference)}{Kaohsiung Exhibition Center}
       \resumeItemListStart
         \resumeItem{Topic : “Creating an AI training ROS map editor using Three.js, exporting to FBX for use in Unity.”}
         \resumeItem{Utilize Three.js and Vue3 to build scene buidler frontend for digitial twin system.}
         \resumeItem{Over 100 audience members attended our lecture session.}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Lecturer}{November 2021 – Present}
-      {NCKU Google Developer Student Clubs Flutter Group}{NCKU GDSC}
-      \resumeItemListStart
-        \resumeItem{Teaching Dart syntax and the Flutter framework structure in GDSC.}
-        \resumeItem{Leading members to compelete collaboration side projects.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -182,24 +182,25 @@
 
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{FastAPI Vue3 OAuth2} $|$ \emph{Python3, FastAPI, PostgreSQL, Vue3, Docker, Git}}{October 2023}
+      {\textbf{IT Infra Automation Monitoring using GenAI} $|$ \emph{CI/CD, GCP, Github Action, FastAPI}}{January 2024}
+      \resumeItemListStart
+        \resumeItem{Wrote a general Message Queue consumer API simulating different error scenarios.}
+        \resumeItem{CI/CD setup: Faced with insufficient GCE permissions, I built a CI server that integrates with GitHub Actions.}
+        \resumeItem{Utilize IAM, Cloud Run, GCE, Artifact Registry and Log Exporter SDK for the hackathon.}
+      \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{FastAPI Vue3 OAuth2} $|$ \emph{FastAPI, PostgreSQL, Vue3, Docker, Git}}{October 2023}
         \resumeItemListStart
           \resumeItem{A boilerplate for building a FastAPI with Vue3, including OAuth2 authentication with JWT tokens.}
           \resumeItem{Assist more than 5 foreigners in solving project setup and discussing OAuth2 best practices.}
         \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{iThome Ironman 30-Day Article Series} $|$ \emph{FastAPI, PostgreSQL, Redis, Docker, Pytest, Jekins}}{May 2023}
+          {\textbf{iThome Ironman 30-Day Article Series} $|$ \emph{FastAPI, PostgreSQL, Redis, Docker, Pytest, MQ}}{May 2023}
           \resumeItemListStart
             \resumeItem{Topic : "FastAPI Implementation, Testing, and Deployment."}
             \resumeItem{Use Redis to implement caching for pagination and 'get by id' operations, achieving a 1.5x performance boost.}
             \resumeItem{Implement a primary-replica structure to enhance parallel reading performance by over 1.3 times.}
-            \resumeItem{Over 1300 people viewed the article series, with an average of 100 views per article.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{HSPC Registration System} $|$ \emph{Python3, Flask, SQLite, p5.js, Docker, Git}}{February 2023}
-          \resumeItemListStart
-            \resumeItem{A full-stack web app was built for users to register for the NCKU High School Programming Contest, with a backstage for administrators to confirm teams, make announcements, and respond to questions.}
-            \resumeItem{Built app in MVC structure using flask and SQLAlchemy ORM to increase its maintainability and extendability.}
+            \resumeItem{Over 2500 people viewed the article series, with an average of 300 views per article.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -210,10 +211,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Python3, PHP, Java, JS, HTML, CSS} \\
-     \textbf{Frameworks}{: FastAPI, Flask, Vue3, React} \\
-     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, SQLite } \\
-     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Github Actions, Jekins, Linux, Vim}
+     \textbf{Languages}{: C, C++, Python3, Go, PHP, Java, JS, HTML, CSS} \\
+     \textbf{Frameworks}{: FastAPI, Flask, Django, Gin, Vue3, React} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, Redis, SQLite } \\
+     \textbf{DevOps Tools}{: Docker, Kubernetes, Github Actions, GCP, Git, Linux}
     }}
  \end{itemize}
 
