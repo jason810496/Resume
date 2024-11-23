@@ -1,0 +1,37 @@
+name: Deploy Resume to Github Page
+# 1. Need to set `gh-page` to `deploy by branch` at Settings > Pages > Source
+# 2. Need to add `write` permission for Action at Settings > Actions > General
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-github-page:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: Install latexmk
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y texlive-full
+      - name: Build docs
+        run: |
+          latexmk -pdf ./main.tex -outdir=./_build
+          latexmk -c -pdf ./main.tex -outdir=./_build
+
+      - name: Rename pdf
+        run: |
+          mv ./_build/main.pdf ./_build/LIU_ZHE_YOU.pdf
+
+      - name: Push documentation to Github Page
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_build
