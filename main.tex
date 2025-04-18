@@ -111,7 +111,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape Liu Zhe You} \\ \vspace{1pt}
-    \small \href{mailto:f74116720@gs.ncku.edu.tw}{\underline{Mail}} $|$ 
+    \small \href{mailto:jasonliu@apache.org}{\underline{Mail}} $|$ 
     \href{https://github.com/jason810496}{\underline{GitHub}} $|$
     \href{https://www.linkedin.com/in/zhe-you-liu/}{\underline{LinkedIn}}
 \end{center}
@@ -138,10 +138,13 @@
 
   \resumeSubheading
     {Appier $|$ Backend Intern at Data Platform Department}{July 2024 – Present}
-    {\emph{FastAPI, Pytest, PostgreSQL, Trino, Hive Metastore, Delta Lake, Databricks, Data Ingestion}}{Hybrid Working}
+    {\emph{Distributed System, Data Ingestion, Airflow, Databricks, Kubernetes, Terraform}}{Hybrid Working}
     \resumeItemListStart
-        \resumeItem{Refactored a data ingestion API from Flask to a FastAPI monorepo, restructuring over 10k+ lines of code.}
-        \resumeItem{Developed an operations dashboard integrated with OAuth and RBAC, supporting usage across 5 departments. }
+        \resumeItem{Built a centralized config onboarding service with Airflow, powering pipelines across 6 core features.}
+        \resumeItem{Refactored a data ingestion API from Flask to FastAPI, migrating 50K+ lines from Hive to Delta Lake.}
+        \resumeItem{Created an integration testing framework with auto API docs, cutting dev time by over 50\%.}
+        \resumeItem{Developed a shared API client generator for internal metadata API used by 5+ services.}    
+        \resumeItem{Developed an operations dashboard integrated with OAuth, RBAC and K8s API, supporting usage across 5 teams. }
     \resumeItemListEnd
   \resumeSubheading
     {PAIA $|$ Part-time Backend}{December 2023 – July 2024}
@@ -159,11 +162,15 @@
 
     \resumeSubheading
       % need to add `\` to escape the `%` in the URL
-      {Apache Airflow $|$ \small \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+author\%3Ajason810496+is\%3Amerged}{\underline{View all contributions on GitHub}}}{March 2024}
+      {Apache Airflow $|$ \small \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+author\%3Ajason810496+is\%3Amerged}{\underline{View all contributions on GitHub}}}{October 2024 - Present}
       {A data orchestration tool with over 37.3k stars on GitHub, used by more than 8,000 companies.}{}
       \resumeItemListStart
+        \resumeItem{Invited as Apache Airflow Committer in 5 month during semester.}
+        \resumeItem{Contributed 80+ PRs and reviewed 90+ with feedback in the last 6 months.}
+        \resumeItem{Resolved OOM issue when reading logs in the webserver, reducing memory usage by 10x.}
         \resumeItem{Refactored the parameter system and database exception handling for the core API, benefiting over 50 endpoints.}
-        \resumeItem{Refactored 2000+ lines of code and had 34 PRs merged in the past 2 month.}
+        \resumeItem{Fixed executor log handler for hybrid executors, including Celery and Kubernetes, improving log readability.}
+        \resumeItem{Fixed incorrect display of multiline messages in logs after filtering (affecting the 2.10.x UI).}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -191,27 +198,27 @@
 
     \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
+% %-----------PROJECTS-----------
+% \section{Projects}
 
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-      {\textbf{IT Infra Automation Monitoring using GenAI} $|$ \emph{CI/CD, GCP, Github Action, FastAPI}}{January 2024}
-      \resumeItemListStart
-        \resumeItem{Wrote a general Message Queue consumer API simulating different error scenarios.}
-        \resumeItem{CI/CD setup: Faced with insufficient GCE permissions, I built a CI server that integrates with GitHub Actions.}
-        \resumeItem{Utilize IAM, Cloud Run, GCE, Artifact Registry and Log Exporter SDK for the hackathon.}
-      \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{iThome Ironman 30-Day Article Series} $|$ \emph{FastAPI, PostgreSQL, Redis, Docker, Pytest, MQ}}{May 2023}
-          \resumeItemListStart
-            \resumeItem{Topic : "FastAPI Implementation, Testing, and Deployment."}
-            \resumeItem{Use Redis to implement caching for pagination and 'get by id' operations, achieving a 1.5x performance boost.}
-            \resumeItem{Implement a primary-replica structure to enhance parallel reading performance by over 1.3 times.}
-            \resumeItem{Over 2500 people viewed the article series, with an average of 300 views per article.}
-          \resumeItemListEnd
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%       {\textbf{IT Infra Automation Monitoring using GenAI} $|$ \emph{CI/CD, GCP, Github Action, FastAPI}}{January 2024}
+%       \resumeItemListStart
+%         \resumeItem{Wrote a general Message Queue consumer API simulating different error scenarios.}
+%         \resumeItem{CI/CD setup: Faced with insufficient GCE permissions, I built a CI server that integrates with GitHub Actions.}
+%         \resumeItem{Utilize IAM, Cloud Run, GCE, Artifact Registry and Log Exporter SDK for the hackathon.}
+%       \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{iThome Ironman 30-Day Article Series} $|$ \emph{FastAPI, PostgreSQL, Redis, Docker, Pytest, MQ}}{May 2023}
+%           \resumeItemListStart
+%             \resumeItem{Topic : "FastAPI Implementation, Testing, and Deployment."}
+%             \resumeItem{Use Redis to implement caching for pagination and 'get by id' operations, achieving a 1.5x performance boost.}
+%             \resumeItem{Implement a primary-replica structure to enhance parallel reading performance by over 1.3 times.}
+%             \resumeItem{Over 2500 people viewed the article series, with an average of 300 views per article.}
+%           \resumeItemListEnd
 
-    \resumeSubHeadingListEnd
+%     \resumeSubHeadingListEnd
 
 
 %
@@ -222,7 +229,7 @@
      \textbf{Languages}{: C, C++, Python, Go, PHP, Java, JS, HTML, CSS} \\
      \textbf{Frameworks}{: FastAPI, Flask, Django, Gin, Vue3, React} \\
      \textbf{Databases}{: MySQL, PostgreSQL, Redis, SQLite } \\
-     \textbf{DevOps Tools}{: Docker, Kubernetes, GitHub Actions, GCP, Git, Linux}
+     \textbf{DevOps Tools}{: Docker, Kubernetes, Terraform, GitHub Actions, GCP, Git, Linux}
     }}
  \end{itemize}
 
