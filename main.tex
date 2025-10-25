@@ -110,26 +110,23 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape Zhe-You Liu} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Jason(Zhe-You) Liu} \\ \vspace{1pt}
     \small \href{mailto:jasonliu@apache.org}{\underline{jasonliu@apache.org}} $|$ 
     \href{https://github.com/jason810496}{\underline{GitHub}} $|$
-    \href{https://www.linkedin.com/in/zhe-you-liu/}{\underline{LinkedIn}}
+    \href{https://www.linkedin.com/in/zhe-you-liu/}{\underline{LinkedIn}} $|$
+    \href{https://blog.zhu424.dev/}{\underline{Blog}}
 \end{center}
 
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeItemListStart
+    \resumeItem{\textbf{Open Source Experience}: \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+author\%3Ajason810496+is\%3Amerged}{\textcolor{blue}{\underline{Contributed 100+ PRs}}} and \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+reviewed-by\%3Ajason810496+}{\textcolor{blue}{\underline{reviewed 300+}}} with detailed feedback in \textbf{Apache Airflow}. Collaborated with engineers from \textbf{AWS}, \textbf{GCP}, \textbf{Astronomer}, etc. Invited as \href{https://lists.apache.org/thread/lrjgl630mdhvzmpdt5tvp425kpqkrl8m}{\textcolor{blue}{\underline{Committer}}} within 5 months.}
+    \resumeItem{\textbf{Backend Engineer} with \textbf{3+ years} of SDLC across \textbf{4 companies}, including \textbf{Microsoft}, \textbf{Appier}, etc.}
+    \resumeItem{\textbf{Conference Speaker} at multiple \textbf{international events}, including \href{https://communityovercode.org/past-sessions/community-over-code-na-2025/}{\textcolor{blue}{\underline{ApacheCon NA}}}, \href{https://airflowsummit.org/sessions/2025/becoming-an-apache-airflow-committer-from-0/}{\textcolor{blue}{\underline{Airflow Summit}}}, etc.}
+    \resumeItem{\textbf{ICPC} Asia Taiwan Regional \href{https://www.linkedin.com/in/zhe-you-liu/overlay/1635552153532/single-media-viewer/?profileId=ACoAADypogYB37Bb3cfyiwt5RnsZYRtLPFnOo-k}{\textcolor{blue}{\underline{Bronze Medalist}}}.}
+  \resumeItemListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {National Cheng Kung University}{Tainan , TW}
-      {Bachelor of Computer Science and Information Engineering}{Expected June 2026}
-          \resumeItemListStart
-          \resumeItem{\textbf{TSMC Hackathon - IT Infra Automation Monitoring using GenAI 2024} :} Second Place
-            \resumeItem{\textbf{ICPC Asia Taiwan Regional Programming Contest 2023} :} Bronze Medal
-            \resumeItem{\textbf{National Collegiate Programming Contest 2023 \& 2022} :} Merit Award
-          \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+% resumeItem SHOULD SHORTER THAN 115 characters
 
 %-----------OPEN SOURCE CONTRIBUTIONS-----------
 \section{Open Source Contributions}
@@ -137,20 +134,23 @@
 
     \resumeSubheading
       {Apache Airflow $|$ Committer}{October 2024 - Present}
-      {A data orchestration tool with over 40k stars on GitHub, used by more than 80,000 companies.}{}
+      {A data orchestration tool with over 40k stars on GitHub, used by more than 70,000 companies.}{}
       \resumeItemListStart
-        \resumeItem{Invited as \href{https://lists.apache.org/thread/lrjgl630mdhvzmpdt5tvp425kpqkrl8m}{\textcolor{blue}{\underline{Apache Airflow Committer}}} in 5 month during semester.}
-        \resumeItem{\href{https://github.com/apache/airflow/pulls?q=is\%3Apr+author\%3Ajason810496+is\%3Amerged}{\textcolor{blue}{\underline{Contributed 100+ PRs}}} and \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+reviewed-by\%3Ajason810496+}{\textcolor{blue}{\underline{reviewed 200+}}} with feedback in the past year.}
-        \resumeItem{Resolved OOM issue when reading logs in the webserver, reducing memory usage by 10x.}
-        \resumeItem{Refactored the parameter system and database exception handling for the core API, benefiting over 50 endpoints.}
+        % \resumeItem{Invited as \href{https://lists.apache.org/thread/lrjgl630mdhvzmpdt5tvp425kpqkrl8m}{\textcolor{blue}{\underline{Apache Airflow Committer}}} in 5 month during semester.}
+        % \resumeItem{\href{https://github.com/apache/airflow/pulls?q=is\%3Apr+author\%3Ajason810496+is\%3Amerged}{\textcolor{blue}{\underline{Contributed 100+ PRs}}} and \href{https://github.com/apache/airflow/pulls?q=is\%3Apr+reviewed-by\%3Ajason810496+}{\textcolor{blue}{\underline{reviewed 200+}}} with feedback in the past year.}
+        \resumeItem{\href{https://github.com/apache/airflow/pull/49470}{\textcolor{blue}{\underline{Fixed OOM issue when reading large logs in the API Server}}}, \textbf{reducing memory usage by 10x}.}
+        \resumeItem{Refactored the parameter system and database exception handling, \textbf{benefiting over 50 API endpoints}.}
+        \resumeItem{\textbf{Led} and developed the \href{https://github.com/apache/airflow/issues/42360}{\textcolor{blue}{\underline{authentication and authorization system}}} for the core API, enhancing security.}
+        \resumeItem{Fixed \href{https://github.com/apache/airflow/pulls?q=\%3Apr+author\%3Ajason810496+is\%3Amerged+Fix+k8s+}{\textcolor{blue}{\underline{five Kubernetes flaky system tests}}} by adding exponential retries in critical sections, improving CI stability.}
+        \resumeItem{\textbf{Initiated} the development for supporting \href{https://github.com/apache/airflow/issues/52712}{\textcolor{blue}{\underline{providers of Event-Driven Scheduling}}}, \textbf{one of the 3.0 core features}.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {LFX Mentorship – CNCF Krkn $|$ Mentee}{May 2025 – Present}
-      {Krkn is a CNCF sandbox project focused on chaos and resiliency testing, with 300+ stars.}{}
+      {LFX Mentorship – CNCF Krkn $|$ Mentee}{May 2025 – August 2025}
+      {Krkn is a CNCF sandbox project focused on chaos and resiliency testing.}{}
       \resumeItemListStart
         \resumeItem{Selected as a mentee for \href{https://mentorship.lfx.linuxfoundation.org/project/92e42a9c-fc0a-46bf-8ca7-69ad673dcce0}{\textcolor{blue}{\underline{LFX Mentorship}}}; collaborating with Red Hat engineers to develop the feature.}
-        \resumeItem{Designed a robust \href{https://docs.google.com/document/d/11KwSi_c_WkkD6I2jbBEMQR-GEjIqOVVu0fviBVQ-9cQ}{\textcolor{blue}{\underline{proposal}}} for a \href{https://github.com/cncf/mentoring/blob/main/programs/lfx-mentorship/2025/02-Jun-Aug/README.md\#chaos-scenario-rollback-feature}{\textcolor{blue}{\underline{rollback scenarios feature}}}, which received positive feedback from the team.}
+        \resumeItem{Designed a robust \href{https://docs.google.com/document/d/11KwSi\_c\_WkkD6I2jbBEMQR-GEjIqOVVu0fviBVQ-9cQ}{\textcolor{blue}{\underline{proposal}}} for a \href{https://github.com/cncf/mentoring/blob/main/programs/lfx-mentorship/2025/02-Jun-Aug/README.md\#chaos-scenario-rollback-feature}{\textcolor{blue}{\underline{rollback scenarios feature}}}, which received \href{https://www.linkedin.com/posts/activity-7368293254267551746-xlVd?utm_source=share&utm_medium=member_desktop\&rcm=ACoAADypogYB37Bb3cfyiwt5RnsZYRtLPFnOo-k}{\textcolor{blue}{\underline{positive feedback}}} from the team.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -160,7 +160,7 @@
   \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Appier $|$ Backend Intern at Data Platform Department}{July 2024 – Present}
+    {Appier $|$ Backend Intern at Data Platform Department}{July 2024 – September 2025}
     {\emph{Distributed System, Data Ingestion, Airflow, Databricks, Kubernetes, Terraform}}{Hybrid Working}
     \resumeItemListStart
         \resumeItem{Built a centralized config onboarding service with Airflow, powering pipelines across 6 core features.}
@@ -176,9 +176,9 @@
         \resumeItem{Fix the Redis anti-pattern for calculating `today\_login\_count` and speed it up over 300 times.}
         \resumeItem{Developing new features and refactoring with Test-Driven Development.}
     \resumeItemListEnd
-  \resumeSubheading
-    {GLSoft $|$ Part-time Software Engineer}{April 2023 – March 2024}
-    {\emph{B2B digital transformation company; solution research, building PoC, API testing.}}{Hybrid Working} 
+  % \resumeSubheading
+  %   {GLSoft $|$ Part-time Software Engineer}{April 2023 – March 2024}
+  %   {\emph{B2B digital transformation company; solution research, building PoC, API testing.}}{Hybrid Working} 
      
     \resumeSubHeadingListEnd
 
@@ -195,18 +195,32 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Apache CommunityOverCode(ApacheCon) North America $|$ Speaker}{September 2025}
-      {Topic : Becoming an Apache Airflow  Committer from 0”}{}
+      {Apache CommunityOverCode(ApacheCon) North America 2025, Airflow Summit 2025$|$ Speaker}{}
+      {Topic : “Becoming an Apache Airflow Committer from 0“ \href{https://speakerdeck.com/zhu424/apache-communityovercode-na-2025-becoming-an-apache-airflow-committer-from-0}{\textcolor{blue}{\underline{[1]}}} \href{https://speakerdeck.com/zhu424/airflow-submit-2025-becoming-an-apache-airflow-committer-from-0}{\textcolor{blue}{\underline{[2]}}}}{}
 
     \resumeSubheading
       {MOPCON(Mobile Open Platform Conference) $|$ Speaker}{November 2023}
       {Topic : “Creating an AI training ROS map editor using Three.js, exporting to FBX for use in Unity.”}{\href{https://youtu.be/nbhyWtfXoc8?si=SoeKS7mpijNQ03L3\&t=1460}{\textcolor{blue}{\underline{Youtube link}}}}
 
-    \resumeSubheading
-      {Wuling Computer Science Club $|$ Director \& DSA Lecturer}{July 2020 – July 2021}
-      {Increasing course engagement by 30\% by leading committee members to organize diverse lectures.}{}
+    % \resumeSubheading
+    %   {Wuling Computer Science Club $|$ Director \& DSA Lecturer}{July 2020 – July 2021}
+    %   {Increasing course engagement by 30\% by leading committee members to organize diverse lectures.}{}
 
     \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Cheng Kung University}{Tainan , TW}
+      {Bachelor of Computer Science and Information Engineering}{Expected June 2026}
+          \resumeItemListStart
+          \resumeItem{\textbf{TSMC Hackathon - IT Infra Automation Monitoring using GenAI 2024} :} Second Place
+            \resumeItem{\textbf{ICPC Asia Taiwan Regional Programming Contest 2023} :} Bronze Medal
+            % \resumeItem{\textbf{National Collegiate Programming Contest 2023 \& 2022} :} Merit Award
+          \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 % %-----------PROJECTS-----------
 % \section{Projects}
@@ -233,16 +247,16 @@
 
 %
 %-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, Python, Golang} \\
-     \textbf{Frameworks}{: FastAPI, Flask, Django, Gin, Apache Airflow} \\
-     \textbf{Databases}{: MySQL, PostgreSQL, Redis, SQLite } \\
-     \textbf{DevOps Tools}{: Docker, Kubernetes, Helm, Terraform, GitHub Actions, GCP, Git, Linux} \\
-     \textbf{Backend Development}{: Distributed Systems, Cloud Native, Data Engineering} \\
-    }}
- \end{itemize}
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: C, C++, Python, Golang} \\
+%      \textbf{Frameworks}{: FastAPI, Flask, Django, Gin, Apache Airflow} \\
+%      \textbf{Databases}{: MySQL, PostgreSQL, Redis, SQLite } \\
+%      \textbf{DevOps Tools}{: Docker, Kubernetes, Helm, Terraform, GitHub Actions, GCP, Git, Linux} \\
+%      \textbf{Backend Development}{: Distributed Systems, Cloud Native, Data Engineering} \\
+%     }}
+%  \end{itemize}
 
 
 %-------------------------------------------
